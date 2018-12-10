@@ -3,7 +3,7 @@ services:
     haproxy:
         image: haproxy
         container_name: haproxy-proxy
-        network_mode: "host" # Required when running on Linux hosts. Don't run wit it on Mac.
+        network_mode: "host" # Required when running on Linux hosts. Will not work on Mac/Windows.
         ports:
             - 443:443
             - 80:80
